@@ -1,14 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        My first React App
-        <h3>Hello world!</h3>
+    <div>
+      <header
+        className={'App-header ${ props.showred ? "header-red" : "header-blue"}'}
+        style={{ top: props.Position?.map() || '10px' }}>
+        My SUPER puper app!
+        <h3>Hello {props.myName}</h3>
       </header>
-    </div>
+    </div >
   );
 }
 

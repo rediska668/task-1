@@ -4,8 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render( < React.StrictMode >
-  <App / >
-  </React.StrictMode>,
+
+const myName = 'Sergey';
+
+ReactDOM.render(< React.StrictMode >
+  <App myName={myName} showred={"red"} />
+</React.StrictMode>,
   document.getElementById('root')
 );
