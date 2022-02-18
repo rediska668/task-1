@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.scss';
 import Message from "./Message";
+import Counter from "./Counter";
 
 function App(props) {
 
   return (
     <div>
-      <header className='header-blue'>
+      <header className={`App-header ${props.showred ? "header-red" : "header-blue"}`}>
         SUPER puper app!
-        <h3>Hello {props.myName}</h3>
+        <h3>My name : {props.myName}</h3>
+        <Counter />
+        <Message name={'props message'} />
       </header>
-      <Message name={'props message'} />
     </div >
   );
 }
