@@ -1,25 +1,30 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Message from "./message";
 
-function App() {
+const appcomp = "render is app";
+
+ReactDOM.render(< React.StrictMode >
+  <Message appcomp={appcomp} />
+</React.StrictMode>,
+  document.getElementById('root')
+);
+
+function App(props) {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+
+        <h3>Hello {props.myName}</h3>
       </header>
-    </div>
+      <Message />
+    </div >
   );
 }
+
+
 
 export default App;
