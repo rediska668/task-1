@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const myName = 'Sergey';
 
 ReactDOM.render(< React.StrictMode >
-  <App myName={myName} showred={"red"} />
+  <App myName={myName} showred={false} />
 </React.StrictMode>,
   document.getElementById('root')
 );
