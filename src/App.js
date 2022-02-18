@@ -20,7 +20,7 @@ function App(props) {
 
         <h3>Hello {props.myName}</h3>
       </header>
-      <Message />
+      {/* <Message />  */}
     </div >
   );
 }
