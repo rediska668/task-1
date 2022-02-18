@@ -1,26 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.scss';
-import Message from "./message";
-
-const appcomp = "render is app";
-
-ReactDOM.render(< React.StrictMode >
-  <Message appcomp={appcomp} />
-</React.StrictMode>,
-  document.getElementById('root')
-);
+import Message from "./Message";
 
 function App(props) {
 
   return (
     <div>
-      <header>
-
+      <header className='header-blue'>
+        SUPER puper app!
         <h3>Hello {props.myName}</h3>
       </header>
-      {/* <Message />  */}
+      <Message name={'props message'} />
     </div >
   );
 }
