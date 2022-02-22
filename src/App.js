@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.scss';
+import './App.css';
 import Message from "./Message";
 import MessageList from "./MessageList";
 import Counter from "./Counter";
@@ -17,8 +17,8 @@ function App(props) {
         <Message name={'props message'} />
         <MessageList />
         <form action="#" className='Message-List'>
-          <textarea id="" cols="30" rows="8"></textarea>
-          <button>Отправка сообщения</button>
+          <textarea id="message-text" cols="25" rows="8"></textarea>
+          <button className='message-button'>Отправка сообщения</button>
         </form>
       </header>
     </div >

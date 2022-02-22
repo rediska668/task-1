@@ -45,7 +45,7 @@
   padding-top: 100px;
 }
 .message{
-  background-color: #61dafb;
+  margin-top: 10px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -61,6 +61,17 @@
   min-width: 200px;
   text-align: center;
 }
-.Message-List{
-  display: inline-block;
+
+.message-button{
+  margin-top: 10px;
+  width: 50%;
+  background-color: gold;
+  border: none;
+  height: 40px;
+  
+}
+#message-text{
+  border: 2px solid #282c34;
+  box-shadow: inset 20em 1em gold;
+  font-size: 18px;
 }
