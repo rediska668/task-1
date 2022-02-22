@@ -2,8 +2,19 @@ import logo from './logo.svg';
 import './App.scss';
 import Message from "./Message";
 import Counter from "./Counter";
+import React, { useState } from 'react';
 
 function App(props) {
+  const [messageList, setmessageList] = useState(
+    [{
+      text: "text",
+      autor: "Me"
+    },
+    {
+      text: "",
+      autor: "bot"
+    }]);
+
 
   return (
     <div>
