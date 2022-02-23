@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+.header-red{
+  background-color: red;
+}
+.header-blue{
+  background-color: blueviolet;
+  text-align: center;
+  padding-top: 100px;
+}
+.message{
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.couter-button{
+  display: block;
+  padding: 5px;
+}
+.counter{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  min-width: 200px;
+  text-align: center;
+}
+
+.message-button{
+  margin-top: 10px;
+  width: 50%;
+  background-color: gold;
+  border: none;
+  height: 40px;
+  
+}
+#message-text{
+  border: 2px solid #282c34;
+  box-shadow: inset 20em 1em gold;
+  font-size: 18px;
+}
